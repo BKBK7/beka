@@ -4,60 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div style="border: 2px solid black; padding: 2rem;">
-
-    <!-- Üst Kısım (Başlık) -->
-    <div style="background-color: lightblue; padding: 2rem; text-align: center;">
-        <h2>HEADER</h2>
+    <div class="stopwatch">
+        <h1 id="display">00:00:00</h1>
+        <button onclick="startStopwatch()">Start</button>
+        <button onclick="stopStopwatch()">Stop</button>
+        <button onclick="resetStopwatch()">Reset</button>
     </div>
   
-    <!-- İçerik Alanı -->
-    <div style="display: flex;">
-        <!-- Yan Menü -->
-        <div style="background-color: lightgray; width: 50%; padding: 2rem;">
-            <h3>SIDEBAR</h3>
-            <p>Yan menü içeriği</p>
-        </div>
-  
-        <!-- Ana İçerik -->
-        <div style="background-color: lightgreen; width: 50%; padding: 2rem;">
-            <h3>CONTENT</h3>
-            <p>Burada ana içerik var!</p>
-        </div>
-    </div>
-  
-    <div style="display: flex;">
-      <div style="background-color: yellowgreen; width: 50%; padding: 2rem; text-align: center;">
-        <h2>SUBTITLE</h2>
-        <p>Burası alt yazı</p>
-      </div>
-
-      <div style="display: flex; background-color: rgb(184, 231, 89); width: 50%; padding: 2rem; text-align: center;">
-        <h2>SUBTITLE</h2>
-        <button style="background-color: #666666; color: #fff; padding: 0.5rem; width: 50%; border-radius: 0.25rem; border: 1px solid #3d3c3c;">Open</button>
-      </div>
-      <br>
-      <div style="background-color: rgb(89, 226, 231); width: 50%; padding: 2rem; text-align: center;">
-        <h2>Merhaba1</h2>
-      </div>
-
-      <div style="background-color: rgb(89, 226, 231); width: 50%; padding: 2rem; text-align: center;">
-        <h2>Merhaba<2/h2>
-      </div>
-
-      <div style="background-color: rgb(157, 35, 214); width: 50%; padding: 2rem; text-align: center;">
-        <h2>SUBTITLE</h2>
-        <p>Burası alt yazı</p>
-      </div>
-    </div>
-  
-    <!-- Alt Kısım -->
-    <div style="background-color: lightcoral; padding: 10px; text-align: center;">
-        <h2>FOOTER</h2>
-    </div>
-  
-  </div>
+  <script src="script.js"></script>
 </body>
 </html>
